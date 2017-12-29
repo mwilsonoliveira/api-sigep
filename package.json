@@ -11,5 +11,8 @@
     "url": "https://github.com/mwilsonoliveira/sigep.git"
   },
   "author": "Marcos Wilson de Oliveira",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "soap": "^0.23.0"
+  }
 }
