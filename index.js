@@ -8,9 +8,21 @@ module.exports = function(env){
 
   function sigepClient(client){
     return {
-      buscarCEP: function(cep){
-        client.consultaCEP({ cep: cep }, function(err, result){
-          console.log(err, result)
+      consultarCEP: function(cep){
+        return new Promise(function(resolve, reject){
+          client.consultaCEP({ cep: cep }, function(err, result){
+            if(err){
+              if(err.root.Envelope.Body.Fault.faultstring){
+                reject({
+                  error: err.root.Envelope.Body.Fault.faultstring
+                })
+              }else{
+                reject(err)
+              }
+            }else{
+              resolve(result.return)
+            }
+          })
         })
       }
     }
