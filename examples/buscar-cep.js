@@ -3,7 +3,7 @@ var sigep = require('../index')
 sigep('dev')
   .then(function(sigepClient){
     sigepClient
-      .consultarCEP('93018040')
+      .consultarCEP('89053-030')
       .then(function(endereco){
         console.log(endereco)
       })
