@@ -1,5 +1,5 @@
 {
-  "name": "sigep-test",
+  "name": "sigep-marcos-test",
   "version": "0.1.2",
   "description": "SIGEP-WebService",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mwilsonoliveira/sigep.git"
+    "url": "git://github.com/mwilsonoliveira/sigep-marcos-test.git"
   },
   "author": "Marcos Wilson de Oliveira",
   "license": "MIT",
